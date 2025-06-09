@@ -48,7 +48,7 @@ static void display_init(void) {
         bus,
         i2c,
         0x3c,
-        &pin_GPIO21
+        &pin_GPIO21     // RESET is broken out on this board
         );
 
     busdisplay_busdisplay_obj_t *display = &allocate_display()->display;
